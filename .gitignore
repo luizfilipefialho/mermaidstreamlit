@@ -1,0 +1,5 @@
+/draft
+.env
+/venv
+.venv/
+.draft/
