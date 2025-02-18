@@ -61,9 +61,20 @@ if "mermaid_agent_messages" not in st.session_state:
     print("Debug: Inicializando histórico de mensagens do Agente (Mermaid).")
 
 # Título e exibição do session_id
-st.title("Editor de Playbook e Diagrama – Fluxo em Três Etapas")
+st.title("Editor de Playbook e Diagrama Dattos – Fluxo em Três Etapas")
 st.caption(f"Session ID atual: {st.session_state['session_id']}")
 
+st.markdown(
+    """
+    Este aplicativo permite que você valide e refine seu Playbook em três etapas 
+    distintas: primeiro, ajustando o conteúdo textual; depois, transformando-o em 
+    um fluxo BPMN intermediário; e, por fim, gerando um diagrama Mermaid para 
+    representação visual. Além disso, nossa plataforma padroniza os playbooks 
+    de acordo com o formato oficial da Dattos e cataloga automaticamente esses 
+    resultados em nosso repositório de playbooks, garantindo organização e 
+    rastreabilidade para todos os processos.
+    """
+)
 # Carregamos globalmente o script do Mermaid para garantir que ele estará disponível
 st.markdown(
     """
